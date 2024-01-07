@@ -17,12 +17,12 @@ npm install @ngneat/transloco-optimize --save-dev
 
 ### Usage
 
-Add to your `package.json` the following script:
+Add to your `package.json` the following script For Angular >=15:
 
 ```json title="package.json"
 "scripts": {
   "transloco:optimize": "transloco-optimize dist/appName/assets/i18n",
-  "build:prod": "ng build --prod && npm run transloco:optimize",
+  "build:prod": "ng build --configuration production && npm run transloco:optimize",
 }
 ```
 
